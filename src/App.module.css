@@ -1,0 +1,51 @@
+.container{
+  margin:10px auto;
+  padding: 10px;
+  width:  600px;
+  align-items: center;
+  justify-content: center;
+ 
+}
+.screen{
+  display: flex; 
+  margin:10px auto 10px auto;
+  width:500px;
+  background-color: #ddd; 
+  height:100px;
+  border: 1px solid #222;
+  border-radius: 5px;
+}
+.light{
+  display: flex;  
+  margin:10px auto 10px auto;
+  width:500px;
+  background-color: #fff; 
+  height:100px;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
+  
+}
+.bigDot{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+ 
+}
+.smallDot{ 
+  height: 15px;
+  width: 15px;
+  background-color: #222;
+  border-radius: 50%;
+}
+.num{
+  padding: 20px;
+}
+
+.lightOn{
+  background-color: yellow;
+}
