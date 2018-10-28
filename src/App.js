@@ -6,40 +6,41 @@ import Grid from "./components/grid/Grid";
 class App extends Component {
   state = {
     data: data,
-    res: '',
-    light: false,
-    
+    res: "",
+    light: false
   };
   onOfLightHandler = () => {
-     this.setState({light : !this.state.light});
+    this.setState({ light: !this.state.light });
   };
-  onScreenHandler=(elem)=>{
-    if(this.state.light){
-      this.setState({res:this.state.res+" "+elem})
+  onScreenHandler = elem => {
+    if (this.state.light) {
+      this.setState({ res: this.state.res + " " + elem });
     }
-    
-  }
+  };
   render() {
     // console.log(this.state.data.keys);
     let lightCss = classes.smallDot;
     if (this.state.light) {
       lightCss += " " + classes.lightOn;
-    
     }
-    let onScreen='';
-    if(this.state.res){
-      onScreen=this.state.res
+    let onScreen = "";
+    if (this.state.res) {
+      onScreen = this.state.res;
     }
     return (
       <div className={classes.container}>
         <div className={classes.screen}>{onScreen}</div>
-        <div className={classes.light} >
+        <div className={classes.light}>
           <div className={classes.bigDot}>
             <span className={lightCss}> </span>
           </div>
           <div className={classes.num}>Num Lock</div>
         </div>
-        <Grid data={this.state.data.keys} click={this.onScreenHandler} numLock={this.onOfLightHandler}/>
+        <Grid
+          data={this.state.data.keys}
+          click={this.onScreenHandler}
+          numLock={this.onOfLightHandler}
+        />
       </div>
     );
   }

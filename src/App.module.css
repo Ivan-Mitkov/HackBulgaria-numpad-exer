@@ -34,6 +34,7 @@
   width: 25px;
   background-color: #eee;
   border-radius: 50%;
+  border: 1px solid rgb(92, 92, 92)
  
 }
 .smallDot{ 
@@ -41,6 +42,7 @@
   width: 15px;
   background-color: #222;
   border-radius: 50%;
+  border: 1px solid rgb(92, 92, 92)
 }
 .num{
   padding: 20px;
