@@ -40,6 +40,7 @@ class App extends Component {
           data={this.state.data.keys}
           click={this.onScreenHandler}
           numLock={this.onOfLightHandler}
+         
         />
       </div>
     );
